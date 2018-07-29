@@ -1,0 +1,51 @@
+.bg-checkbox {
+    width: 12px; height: 12px;
+    background: url('css_sprites.png') -55px -51px;
+}
+
+x
+.bg-fb_black {
+    width: 12px; height: 22px;
+    background: url('css_sprites.png') -10px -87px;
+}
+
+x
+.bg-fb {
+    width: 12px; height: 22px;
+    background: url('css_sprites.png') -42px -87px;
+}
+
+x
+.bg-icon_login {
+    width: 18px; height: 16px;
+    background: url('css_sprites.png') -92px -46px;
+}
+
+x
+.bg-inst_black {
+    width: 21px; height: 21px;
+    background: url('css_sprites.png') -10px -10px;
+}
+
+x
+.bg-inst {
+    width: 21px; height: 21px;
+    background: url('css_sprites.png') -51px -10px;
+}
+
+x
+.bg-vk_black {
+    width: 25px; height: 16px;
+    background: url('css_sprites.png') -10px -51px;
+}
+
+x
+.bg-vk {
+    width: 25px; height: 16px;
+    background: url('css_sprites.png') -92px -10px;
+}
+
+
+
+Добавить паттерн бэкграунд
+Посмотреть наведение юзер блока

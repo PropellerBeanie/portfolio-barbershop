@@ -1,0 +1,290 @@
+body {
+  outline: solid yellow 4px;
+  min-width: 960px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 24px;
+  font-family: "PT Sans Narrow", "Arial", sans-serif;
+  color: #f7f4f1;
+  text-transform: uppercase;
+  background: #000000 url("../img/body-bg.jpg") no-repeat center top;
+  margin: 0;
+  padding: 0;
+}
+
+.layout {
+  display: flex;
+  justify-content: space-between;
+}
+
+img {
+  display: block;
+  line-height: 7;
+  text-align: center;
+  text-shadow: 5px 5px 10px black;
+  font-size: 200%;
+  background: repeating-linear-gradient(
+  -55deg,
+  #222,
+  #222 10px,
+  #333 10px,
+  #333 20px
+);
+}
+
+.container {
+  outline: solid red 5px;
+  width: 940px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.main-header {
+  outline: solid green 5px;
+  margin: 0 0 60px 0;
+  color: #f7f4f1;
+  background-color: #000000;
+}
+
+.main-navigation  {
+  display: flex;
+
+  justify-content: flex-start;
+  align-items: center;
+  width: 780px;
+  height: 72px;
+}
+
+
+.main-navigation ul {
+  list-style: none;
+  flex-grow: 1;
+  /* margin: 0 0 0 20px; */
+  padding: 0;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.main-navigation li {
+  /* margin-right: 40px; */
+  font-size: 16px;
+  line-height: 20px;
+}
+
+/* .main-navigation > a {
+  margin-right: 10px;
+} */
+
+.main-navigation a {
+  display: block;
+  padding: 25px 20px;
+  color: #f7f4f1;
+  text-decoration: none;
+}
+
+.main-navigation a:hover {
+  background: #242424;
+}
+
+.user-block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 140px;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.user-block a {
+  position: relative;
+  display: block;
+  padding: 25px 20px 25px 50px;
+  color: #f7f4f1;
+  text-decoration: none;
+}
+
+.user-block a:hover {
+  background: #242424;
+}
+
+.user-block a::before {
+  content: "";
+  position: absolute;
+  top: 28px;
+  left: 20px;
+  width: 18px;
+  height: 18px;
+  background: transparent url("../img/sprite.png") no-repeat;
+  background-position: -10px -10px;
+  background-size: 350%;
+  opacity: 0.3;
+}
+
+.user-block a:hover::before {
+  opacity: 1;
+}
+
+.index-logo {
+  width: 368px;
+  height: 204px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 25px;
+}
+
+.index-logo img{
+  width: 368px;
+  height: 204px;
+}
+
+.features {
+  display: flex;
+  margin-bottom: 80px;
+}
+
+.features-item {
+  width: 300px;
+  min-height: 175px;
+  margin-right: 20px;
+}
+
+.features-item:last-child {
+  margin-right: 0;
+}
+
+.index-content {
+  display: flex;
+  margin-bottom: 35px;
+  padding: 50px 80px;
+}
+
+.index-content-left {
+  width: 380px;
+  min-height: 330px;
+}
+
+.index-content-right {
+  width: 300px;
+  min-height: 330px;
+}
+
+.main-footer {
+  margin-top: 65px;
+  padding-top: 60px;
+  padding-bottom: 40px;
+}
+
+.footer-contacts {
+  float: left;
+  width: 320px;
+  margin-right: 60px;
+  min-height: 90px;
+}
+
+.footer-social {
+  float: left;
+  width: 180px;
+  min-height: 90px;
+}
+
+.footer-copyright {
+  float: right;
+  width: 180px;
+  min-height: 90px;
+}
+
+/*shop.html*/
+
+.shop-side-form {
+  float: left;
+  width: 230px;
+  min-height: 594px;
+}
+
+.shop-grid-item {
+  float: left;
+  width: 220px;
+  min-height: 286px;
+}
+
+.shop-pagination {
+  float: left;
+  width: 600px;
+}
+
+/*item.html*/
+
+.item-content-left {
+  float: left;
+  width: 460px;
+}
+
+.item-content-right {
+  float: right;
+  width: 410px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*Системное оформление*/
+/* body {
+  padding: 3px;
+}
+
+body > *,
+body > * > *,
+body > * > * > * {
+  position: relative;
+}
+
+body > *::before,
+body > * > *::before,
+body > * > * > *::before {
+  content: "";
+  position: absolute;
+  height: 24px;
+  padding: 2px 5px;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+  font-family: "Courier New", monotype;
+  white-space: nowrap;
+}
+
+body > *::before {
+  top: -3px;
+  left:-3px;
+}
+
+body > * > *::before {
+  top: -3px;
+  left: -3px;
+}
+
+body > * > * > *::before {
+  top: 0;
+  left: 0;
+}
+
+body > * {
+  background: rgba(0, 128, 0, 0.2);
+  box-shadow: 0 0 0 3px green;
+}
+
+body > *::before {
+  color: white;
+  background: green;
+}
+
+.main-header::before {
+  content: ".main-header";
+} */
